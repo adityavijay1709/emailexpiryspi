@@ -103,7 +103,7 @@ public class CustomTermsAndConditions implements RequiredActionProvider {
                 else if (timeElapsed > 1000L * 60 * 60 * 24 * 83) {
 
                     // Given remaining milliseconds
-                    long time_left_to_expire_millis = 1000L * 60 * 5 - timeElapsed;
+                    long time_left_to_expire_millis = 1000L * 60 * 60 * 24 * 90 - timeElapsed;
 
                     // Calculate remaining days
                     long remainingDays = time_left_to_expire_millis / (1000L * 60 * 60 * 24);
